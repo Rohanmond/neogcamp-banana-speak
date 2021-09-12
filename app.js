@@ -7,8 +7,10 @@
 
 var buttonTranslate=document.querySelector("#btn-translate")
 var txtInput=document.querySelector("#txt-input");
-buttonTranslate.addEventListener("click",function clickEvenHandler(){
-    console.log("clicked");
-    console.log("input",txtInput.value);
-})
+var outputDiv=document.querySelector("#output");
+function clickHandler(){
+    outputDiv.innerText=txtInput.value+" jdhgkh ";
+}
+
+buttonTranslate.addEventListener("click",clickHandler);
 
